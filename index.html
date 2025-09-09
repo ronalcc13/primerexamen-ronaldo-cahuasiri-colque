@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo">MANACO</a>
+
+      <nav class="site-nav">
+        <button class="menu-toggle" id="menuToggle" aria-controls="mainMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+          ☰
+        </button>
+        <ul id="mainMenu" class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main id="contenido">
+    <section class="banner" aria-label="Lema de la empresa">
+      <h1>Calzado que impulsa tu paso</h1>
+    </section>
+    <section class="productos">
+      <h2>Productos</h2>
+      <ul class="lista-productos">
+        <li class="producto-card">
+          <article>
+            <img src="img/producto1.webp" alt="Zapato deportivo modelo 1">
+            <h3>Producto 1</h3>
+            <p class="price">$00.00</p>
+            <button class="buy">Comprar</button>
+          </article>
+        </li>
+        <li class="producto-card">
+          <article>
+            <img src="img/producto2.webp" alt="Zapato formal modelo 2">
+            <h3>Producto 2</h3>
+            <p class="price">$00.00</p>
+            <button class="buy">Comprar</button>
+          </article>
+        </li>
+        <li class="producto-card">
+          <article>
+            <img src="img/producto3.webp" alt="Sandalia modelo 3">
+            <h3>Producto 3</h3>
+            <p class="price">$00.00</p>
+            <button class="buy">Comprar</button>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <h2>Copyright © 2025 MANACO</h2>
+  </footer>
+  <script>
+    const btn = document.getElementById('menuToggle');
+    const menu = document.getElementById('mainMenu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('active');
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+    });
+  </script>
+</body>
+</html>
