@@ -45,7 +45,7 @@ body {
 }
 .logo {
   font-size: 2rem;
-  color: #373737;
+  color: red;
   font-weight: bold;
   text-decoration: none;
 }
@@ -153,6 +153,7 @@ body {
   border-top: 1px solid #ccc;
 }
 .site-footer h2 {
+  color: blue;
   font-weight: 300;
 }
 
@@ -191,7 +192,7 @@ body {
   .banner {
     display: none;
   }
-  
+
   #contenido {
     padding: 0rem 1rem;
   }
